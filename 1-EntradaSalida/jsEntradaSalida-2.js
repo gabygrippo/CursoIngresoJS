@@ -4,8 +4,28 @@ function mostrar()
 {
 	
 	
-	var nombre =prompt("ingrese nombre");
+	
+//flag
+var peso;
 
-	alert(nombre);
+var menorPeso;
+
+var flagPrimerPeso= true;      // declaras la bandera true para que ingrese
+
+if (flagPrimerPeso == true){
+
+    menorPeso = peso;         // ingresa y guarda el primer dato 
+
+    flagPrimerPeso = false;   // la pasas a false para que no vuelva a entrar
+
+ }
+
+ if (menorPeso > peso){       // si el proximo peso que ingreses es menor al menorPeso guardado, lo reemplaza.
+
+     menorPeso = peso
+
+ }
+
+
 }
 
